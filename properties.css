@@ -1,0 +1,400 @@
+/* perus css määrittelyjä sivun eri elementeille sekä luokille */
+
+body {
+    color: rgb(87, 87, 87);
+    background-color: rgb(1, 51, 1);
+}
+
+ header {
+    background-color: rgb(1, 51, 1);
+    padding: 10px;
+ }
+
+h1 {
+    font-style: oblique;
+    font-family: fantasy;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 51, 1);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 0px;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 36px;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 51, 1);
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+div {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.teksti-info {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 51, 1);
+    text-align: center;;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* sivuston navigaatiopalkin asetuksia*/
+.topnav {
+    width: 100%;
+    position: static;
+    overflow: hidden;
+    background-color: #003101;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+  /* sivuston navigaatiopalkin nappien asetuksia*/
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-size: larger;
+    width: 225px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border: 5px solid rgba(1, 21, 0, 0.629);
+    background-color: rgba(68, 251, 2, 0.607);
+}
+/* toiminto joka suurentaa navigaation nappeja kun kursori viedeen päälle*/
+.topnav a:hover {
+    background-color: #008a39;
+    color: rgb(255, 255, 255);
+    transform: scale(1.2); 
+    transition: transform 0.2s; 
+}
+/* pokemon sivun sivupalkin asetukset*/
+.sidenav-lista {
+    float: left;
+    width: 120px;
+    position: static;
+    overflow: hidden;
+    margin-right: 20px;
+    background-color: #003101;
+    text-align: center;
+}
+  /* pokemon sivun sivupalkin nappien asetukset*/
+.sidenav-lista a {
+    display: block;
+    color: rgba(5, 5, 5, 0.607);
+    text-align: center;
+    width: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    border: 5px solid rgba(1, 21, 0, 0.629);
+    background-color: rgba(68, 251, 2, 0.607);
+    border-radius: 20px;
+}
+/* toiminto joka suurentaa navigaation nappeja kun kursori viedeen päälle*/
+.sidenav-lista a:hover {
+    background-color: #008a39;
+    color: rgb(255, 255, 255);
+    transform: scale(1.2); 
+    transition: transform 0.2s; 
+}
+/* linkit sivun nappien asetukset*/
+.linkkinappi {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    width: 225px;
+    padding: 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    border: 5px solid rgba(1, 21, 0, 0.629);
+    background-color: rgb(126, 246, 82);
+    border-radius: 30px;
+}
+/* toiminto joka suurentaa linkkien nappeja kun kursori viedeen päälle*/
+.linkkinappi:hover {
+    background-color: #008a1c;
+    color: rgb(255, 255, 255);
+    transform: scale(1.2); 
+    transition: transform 0.2s; 
+}
+/* .content luokan asetukset */
+.content {
+    margin-left: 270px; 
+    padding: 15px;
+}
+/* etusivun kuvien asetukset */
+.image-linkki {
+    margin-top: 30px;
+    width: 200px;
+    margin-left: 150px;
+}
+/* toiminto joka saa etusivun kuvat heilumaan kun kursori on päällä */
+.image-linkki:hover{ 
+    animation: wiggle 200ms infinite;
+    animation-timing-function: linear;   
+  }
+/* ylläolevan toiminnon määritykset */
+@keyframes wiggle {
+    0% { transform: translate(4px, 0); }
+    50% { transform: translate(-4px, 0); }
+    100% { transform: translate(4px, 0); }
+  }
+    
+/* pokemon sivun pokedeksi elementin asetukset */
+#pokedeksi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    padding-inline-start: 0;
+    padding-left: 45px;
+
+}
+/* pokemon sivun korttien piilotettujen tietojen luokkien asetukset */
+.additional-info {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 23px;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 20px;
+}
+/* pokemon sivun korttien piilotettujen tietojen luokkien asetukset */
+.additional-info2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 20px;
+}
+/* pokemon sivun korttien piilotettujen tietojen luokkien asetukset */
+.additional-info3 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 20px;
+}
+
+/* .container luokan elementin asetukset */
+.container {
+    padding: 40px;
+    border-radius: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
+    max-height: 70vh;
+    overflow: auto;
+    background-color:  rgb(255, 255, 255);
+}
+/* pokemon sivun korttien asetukset */
+.card {
+    border: 5px solid rgba(0, 0, 0, 0.308);
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+    width: 180px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 220px;
+  
+    
+}
+/* pokemon sivulla kortteja klikattaessa ne muuttuvat tähän luokkaan,
+    eli muuttuneiden korttien asetukset */
+.wide-card {
+    transform: scale(1);
+    transition: all 0.5s;
+    border: 5px solid rgba(0, 0, 0, 0.308);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 275px;
+    height: 620px;
+    text-align: center;
+    z-index: 2;
+}
+
+/* muuttaa kursorin kädeksi kun se viedään klikattavan objektin ylle*/
+.clickable-card {
+    cursor: grab;
+}
+/* pokemon sivun korttien efekti kun kursori on niiden päällä */
+.card:hover {
+    transform: scale(1.2); 
+    transition: transform 0.4s; 
+}
+
+/* pokemon sivun korttien asetukset */
+.card h2 {
+    text-align: center;
+    font-size: 23px;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 20px;
+}
+/* pokemon sivun korttien asetukset */
+.card p {
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 20px;
+}
+/* pokemon sivun korttien asetukset */
+.card img {
+    max-width: 100%;
+    height: auto;
+    background-color:  rgba(255, 255, 255, 0.705);
+    border-radius: 60px;
+    
+}
+/* pokemon sivun muuttuneiden korttien asetukset */
+.wide-card h2 {
+    text-align: center;
+    font-size: 23px;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 20px;
+}
+/* pokemon sivun muuttuneiden korttien asetukset */
+.wide-card p {
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+}
+/* pokemon sivun muuttuneiden korttien asetukset */
+.wide-card img {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    background-color:  rgba(255, 255, 255, 0.705);
+    border-radius: 60px;
+    
+}
+/* pokemon sivun muuttuneiden korttien asetukset */
+.wide-card ul {
+    text-align: center;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 20px;
+}
+/* pokemon tyyppeihin liittyvät asetukset, kortissa listattuna kaikki tyypit*/
+.types {
+    text-align: center;
+    width: 20px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 20px;
+}
+/* pokemon attribuutteihin liittyvät asetukset, 
+    korteissa listattuna infoa pokemoneista jotka tämän luokan alla*/
+.attribuutit {
+    text-align: center;
+    width: 20px;
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.705);
+}
+/* pitkä lista pokemonien tyypeistä ja niiden väreistä,
+    näistä määritetty pokemon sivun korttien taustaväri itse kunkin pokemonin 
+    tyypin mukan joka määräytyy scripteillä*/
+.fire-type {
+    background-color: rgb(251, 126, 2);
+}
+
+.water-type {
+    background-color: rgb(0, 102, 255);
+}
+
+.grass-type {
+    background-color: rgb(81, 255, 0); 
+}
+
+.normal-type {
+    background-color: rgba(189, 132, 0, 0.349);
+}
+
+.electric-type {
+    background-color: rgba(255, 251, 0, 0.59);
+}
+
+.ice-type {
+    background-color: rgba(0, 213, 255, 0.373); 
+}
+
+.fighting-type {
+    background-color: rgba(169, 2, 2, 0.637);
+}
+
+.poison-type {
+    background-color: rgba(142, 21, 255, 0.264);
+}
+
+.ground-type {
+    background-color: rgba(255, 187, 0, 0.349);
+}
+
+.flying-type {
+    background-color: rgba(144, 0, 255, 0.2);
+}
+
+.psychic-type {
+    background-color: rgba(255, 0, 234, 0.275);
+}
+
+.bug-type {
+    background-color: rgba(157, 255, 0, 0.397); 
+}
+
+.rock-type {
+    background-color: rgba(216, 148, 0, 0.625);
+}
+
+.ghost-type {
+    background-color: rgba(42, 0, 114, 0.381);
+}
+
+.dragon-type {
+    background-color: rgba(79, 0, 169, 0.348);
+}
+
+.dark-type {
+    background-color: rgba(43, 23, 15, 0.568);
+}
+
+.steel-type {
+    background-color: rgba(110, 110, 110, 0.514);
+}
+
+.fairy-type {
+    background-color: rgba(188, 0, 110, 0.464);
+}
+
+
+
