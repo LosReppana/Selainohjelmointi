@@ -105,7 +105,7 @@ footer {
 }
   /* pokemon sivun sivupalkin nappien asetukset*/
 .sidenav-lista a {
-    float: center;
+
     display: block;
     color: rgba(5, 5, 5, 0.607);
     text-align: center;
