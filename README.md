@@ -22,6 +22,7 @@ Tiedostoissa:
   - Linkit siältävä sivu - Linkit.html
   - Css tiedosto jossa kaikki sivujen conffit
   - JavaScript tiedosto joka hakee tiedon sivuille pokemonApista
+  - images- kansion jossa kaksi etusivula käytettyä kuvaa, tehty itse ja säästetty eli tekijänoikeusvapaita
 
 tl;dr Simppeli pienehkö sivusto jolla pokemonit listattuna pokeApista hyödyntäen JavaScriptiä
   
